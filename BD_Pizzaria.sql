@@ -227,19 +227,3 @@ VALUES (20, 'pizza de frango com Catupiry','Pizza', 29.9, 42.9);
 SELECT * FROM PEDIDO_VENDA WHERE COD_CLIENTE LIKE 'Kayque%';
 SELECT * FROM VENDEDOR WHERE NOME LIKE 'Kayque%';
 SELECT * FROM PRODUTO WHERE COD_TIPO_PRODUTO LIKE '%frango%'
-
--- UPDATE 
-UPDATE Livro SET Titulo = 'Introdução aos Compiladores' WHERE LivroId  = 1;
-UPDATE Aluno SET Nome = 'João Paulo' WHERE Matricula = 1;
-UPDATE Emprestimo SET DataHora_Emprestimo = '2023-07-08 22:00:00' WHERE EmprestimoId = 1;
-
--- DELETE
-DELETE FROM Emprestimo WHERE EmprestimoId = 1;
-DELETE FROM Aluno WHERE Matricula = 1;
-DELETE FROM Livro WHERE LivroId = 1;
-
--- INNER JOIN
-SELECT e.EmprestimoId, l.Titulo, a.Nome
-FROM Emprestimo e
-INNER JOIN Livro l ON e.LivroId = l.LivroId
-INNER JOIN Aluno a ON e.Matricula = a.Matricula;
