@@ -1,4 +1,4 @@
-BANCO DE DADOS PIZZARIA
+--BANCO DE DADOS PIZZARIA
 
 -----------------------------------------------------------------------------------
 -- Criando a tabela PEDIDO_VENDA
